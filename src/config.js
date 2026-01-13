@@ -5,7 +5,7 @@ const runtime = get_runtime()
 
 if (['cloudflare', 'vercel'].includes(runtime)) OVERSEAS = true
 
-const PORT = globalThis?.Deno?.env?.get("PORT") || globalThis?.process?.env?.PORT || 3000
+const PORT = globalThis?.Deno?.env?.get("PORT") || globalThis?.process?.env?.PORT || 8080
 
 OVERSEAS = Boolean(OVERSEAS)
 
